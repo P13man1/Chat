@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1>Community Chat</h1>
+        </header>
+        <main class="chat-main">
+            <div class="chat-sidebar">
+                <h3>Users</h3>
+                <ul id="users"></ul>
+            </div>
+            <div class="chat-window">
+                <div id="chat-messages"></div>
+            </div>
+        </main>
+        <footer class="chat-footer">
+            <input id="username" type="text" placeholder="Enter your name">
+            <input id="message" type="text" placeholder="Enter message">
+            <button id="send" onclick="sendMessage()">Send</button>
+        </footer>
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>
